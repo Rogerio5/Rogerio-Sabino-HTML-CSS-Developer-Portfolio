@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+strong {
+    color: aqua;
+}
+
+/* Estilo para destacar tecnologias */
+.tech {
+     color: aqua; /* azul fraco */
+    font-weight: bold;
+}
+
+.foto-perfil {
+    width: 500px;
+    border-radius: 10px;
+}
