@@ -56,8 +56,7 @@
 
 ## 🌐 Acesso ao Projeto / Access to the Project
 
-- [Repositório GitHub / GitHub Repository](https://github.com/SEU-USUARIO/portfolio-responsivo)  
-- [Deploy Online](https://SEU-USUARIO.github.io/portfolio-responsivo/)
+- [Repositório GitHub / GitHub Repository](https://github.com/Rogerio5/Rogerio-Sabino-HTML-CSS-Developer-Portfolio)  
 
 ---
 
