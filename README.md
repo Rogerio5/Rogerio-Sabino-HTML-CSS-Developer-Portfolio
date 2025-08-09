@@ -4,7 +4,6 @@
 
 ![Imagem de capa / Cover Image](image.png)
 
----
 
 ---
 
