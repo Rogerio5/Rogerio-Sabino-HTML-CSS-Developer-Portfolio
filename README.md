@@ -6,14 +6,6 @@
 
 ---
 
-## 🏅 Badges
-
-- 📦 Tamanho do repositório / Repository Size:  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/SEU-USUARIO/portfolio-responsivo)
-
-- 📄 Licença do projeto / Project License:  
-  ![GitHub license](https://img.shields.io/github/license/SEU-USUARIO/portfolio-responsivo)
-
 ---
 
 ## 📋 Índice / Table of Contents
