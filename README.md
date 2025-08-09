@@ -2,7 +2,7 @@
 
 # 🎨 Projeto Portfolio Responsivo / Responsive Portfolio Project
 
-![Imagem de capa / Cover Image](assets/portfolio-capa.png)
+![Imagem de capa / Cover Image](image.png)
 
 ---
 
