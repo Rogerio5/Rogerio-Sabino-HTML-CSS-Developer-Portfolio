@@ -1,19 +1,303 @@
+/* 🎯 Importa as fontes Krona One e Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+  --cor-primaria: #000;
+  --cor-secundaria: #fff;
+  --cor-terciaria: aqua;
+
+  --efeito-brilho: #00ffff;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/* 🔄 Reset básico para garantir consistência entre navegadores */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  box-sizing: border-box; /* Inclui borda e padding no cálculo de largura/altura */
+}
+
+/* 🌌 Estilo geral do corpo da página */
 body {
-    background-color: black;
-    color: white;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  font-family: 'Montserrat', sans-serif; /* Fonte principal */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding-top: 140px; /* Espaço para o cabeçalho fixo */
 }
 
-strong {
-    color: aqua;
+/* 📌 Cabeçalho fixo no topo da tela */
+.cabecalho {
+  position: fixed; /* Fixa no topo da tela */
+  top: 0;
+  left: 17%; /* Desloca o cabeçalho da esquerda (ajustável) */
+  width: 100%;
+  background-color: #000; /* Fundo preto */
+  z-index: 1000; /* Garante que fique acima dos outros elementos */
+  padding: 20px 0; /* Espaçamento vertical interno */
 }
 
-/* Estilo para destacar tecnologias */
-.tech {
-     color: aqua; /* azul fraco */
-    font-weight: bold;
+/* 📦 Container interno do cabeçalho */
+.cabecalho__container {
+  width: 100%;
+  padding: 0 20px; /* Espaçamento lateral */
+  display: flex; /* Layout flexível */
+  justify-content: flex-start; /* Alinha conteúdo à esquerda */
+  align-items: center; /* Alinha verticalmente ao centro */
 }
 
+/* 📁 Menu de navegação */
+.cabecalho__menu {
+  display: flex; /* Layout horizontal */
+  gap: 40px; /* Espaço entre os links */
+  justify-content: flex-start; /* Alinha à esquerda */
+  align-items: center;
+}
+
+/* 🔗 Links do menu */
+.cabecalho__menu__link {
+  font-size: 24px;
+  font-weight: 600;
+  color: aqua; /* Cor azul neon */
+  text-decoration: none; /* Remove sublinhado */
+  transition: all 0.3s ease; /* Suaviza animações */
+  display: flex; /* Permite ícone ao lado do texto */
+  align-items: center;
+  gap: 8px; /* Espaço entre ícone e texto */
+}
+
+/* 🎨 Ícones dentro dos links */
+.cabecalho__menu__link i {
+  font-size: 22px;
+  color: inherit; /* Herda a cor do link */
+}
+
+/* 🔄 Hover: aumenta e muda cor */
+.cabecalho__menu__link:hover {
+  transform: scale(1.1); /* Aumenta ligeiramente */
+  color: #00ffff; /* Muda para azul mais claro */
+}
+
+/* ✨ Active: brilho ao clicar */
+.cabecalho__menu__link:active {
+  text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff; /* Efeito de brilho */
+}
+
+/* 🧱 Container principal da seção de apresentação */
+.apresentacao {
+  display: flex; /* Layout horizontal */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; /* Espaço entre imagem e texto */
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* 🖼️ Imagem de perfil */
 .foto-perfil {
-    width: 500px;
-    border-radius: 10px;
+  width: 40%; /* Ocupa 40% do container */
+  max-width: 400px;
+  border-radius: 10px; /* Bordas arredondadas */
+  object-fit: cover; /* Mantém proporção da imagem */
+}
+
+/* 📄 Bloco de conteúdo textual */
+.apresentacao__conteudo {
+  width: 100%;
+  max-width: 615px;
+}
+
+/* 📋 Container da descrição */
+.descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px; /* Espaço entre elementos */
+}
+
+/* 🏷️ Título principal */
+.apresentacao__conteudo__titulo {
+  font-size: 32px;
+  font-family: 'Krona One', sans-serif;
+}
+
+/* 📝 Texto principal */
+.apresentacao__conteudo__texto {
+  font-size: 24px;
+}
+
+/* ✨ Destaques em texto */
+.tech,
+strong {
+  color: aqua; /* Cor azul neon */
+  font-weight: bold;
+}
+
+/* 🔘 Container dos botões */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaço entre botões */
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 📢 Subtítulo abaixo do texto */
+.apresentacao__conteudo__subtitulo {
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+/* 🧭 Estilo dos botões */
+.botao {
+  width: 55%;
+  min-height: 60px;
+  padding: 16px 0;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid aqua;
+  background-color: transparent;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🎨 Ícones dentro dos botões */
+.botao i {
+  font-size: 24px;
+  color: aqua;
+  margin-right: 12px;
+}
+
+/* ✨ Hover padrão dos botões */
+.botao:hover {
+  background-color: rgba(0, 255, 255, 0.1); /* Leve brilho aqua */
+  transform: scale(1.03); /* Aumenta ligeiramente */
+  cursor: pointer;
+}
+
+/* 🐙 Botão GitHub */
+.botao.github {
+  background-color: #333;
+  color: #fff;
+}
+
+.botao.github:hover {
+  background-color: #555; /* Tom mais claro ao passar o mouse */
+  transform: scale(1.02);
+}
+
+/* 💼 Botão LinkedIn */
+.botao.linkedin {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid aqua;
+}
+
+.botao.linkedin:hover {
+  background-color: #000; /* Mantém fundo preto */
+  transform: scale(1.03);
+}
+
+/* 📍 Rodapé fixo na parte inferior */
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: aqua;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+/* 📱 Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Empilha os elementos */
+    padding-top: 120px; /* Ajusta espaço do cabeçalho */
+  }
+
+  .cabecalho {
+    left: 0; /* Remove deslocamento lateral */
+    padding: 10px 0;
+  }
+
+  .cabecalho__container {
+    flex-direction: column; /* Empilha logo e menu */
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .cabecalho__menu {
+    flex-direction: column; /* Menu vertical */
+    gap: 20px;
+    width: 100%;
+  }
+
+  .cabecalho__menu__link {
+    font-size: 20px; /* Texto menor para celular */
+  }
+
+  .apresentacao {
+    flex-direction: column; /* Empilha imagem e texto */
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .foto-perfil {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .apresentacao__conteudo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .descricao {
+    align-items: center;
+    text-align: center;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 28px;
+  }
+
+  .apresentacao__conteudo__texto {
+    font-size: 20px;
+  }
+
+  .botoes {
+    width: 100%;
+  }
+
+  .botao {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .rodape {
+    font-size: 16px;
+    padding: 8px;
+  }
 }
